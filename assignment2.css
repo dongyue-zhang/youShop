@@ -471,7 +471,6 @@ h2{
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: aqua;
 }
 .add_to_cart_button button{
   padding: 0.5rem 1rem;
