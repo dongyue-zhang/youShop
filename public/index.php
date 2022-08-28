@@ -19,7 +19,7 @@ include('header.php');
     <div class='item_container'>
         <div class='item_img_name'>
             <a href="<?php echo "./detail.php?id=". $results_phone['product_id']; ?>">
-                <img src="<?php echo "../". $results_phone['img_src']; ?>" class='item_img' alt="<?php echo $results_phone['name']; ?>">
+                <img src="<?php echo $results_phone['img_src']; ?>" class='item_img' alt="<?php echo $results_phone['name']; ?>">
                 <div class='item_name'><?php echo $results_phone['name']; ?></div>
             </a>
         </div>

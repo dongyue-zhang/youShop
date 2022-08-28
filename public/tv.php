@@ -14,7 +14,7 @@ include('header.php');
     <div class='item_container'>
         <div class='item_img_name'>
             <a href="<?php echo "./detail.php?id=". $results_tv['product_id']; ?>">
-                <img src="<?php echo "../" . $results_tv['img_src']; ?>" alt="<?php echo $results_tv['name'] ?>" class='item_img'>
+                <img src="<?php echo $results_tv['img_src']; ?>" alt="<?php echo $results_tv['name'] ?>" class='item_img'>
                 <div class='item_name'><?php echo $results_tv['name']; ?></div>
             </a>
         </div>

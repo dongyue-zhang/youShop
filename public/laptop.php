@@ -15,7 +15,7 @@ include('header.php');
     <div class='item_container'>
         <div class='item_img_name'>
             <a href="<?php echo "./detail.php?id=". $results_laptop['product_id']; ?>">
-                <img src="<?php echo "../" . $results_laptop['img_src']; ?>" class='item_img' alt="<?php echo $results_laptop['name'] ?>">
+                <img src="<?php echo $results_laptop['img_src']; ?>" class='item_img' alt="<?php echo $results_laptop['name'] ?>">
                 <div class='item_name'><?php echo $results_laptop['name']; ?></div>
             </a>
         </div>

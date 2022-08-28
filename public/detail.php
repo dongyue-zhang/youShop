@@ -14,7 +14,7 @@ mysqli_close($db);
 <div class='detail'>
     <div class='detail_item'>
         <div class='detail_item_img_container'>
-            <img class='detail_item_img' src='<?php echo "../" . $result['img_src']?>'>
+            <img class='detail_item_img' src='<?php echo $result['img_src']?>'>
         </div>
         <form  action='cart.php' method='get'>
             <div class='detail_item_name'>
