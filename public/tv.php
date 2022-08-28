@@ -2,7 +2,6 @@
 session_start(); 
 require_once('database.php');
 $page_title = 'TVs';
-
 $db = db_connect();
 $sql = "SELECT * FROM product ";
 $sql_tv = $sql."WHERE category = 'tv'";
