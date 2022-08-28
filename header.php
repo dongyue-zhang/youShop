@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Dongyue Zhang">
     <meta name="date" content="2022-07-26">
-    <link rel="stylesheet" href="./assignment2.css">
-    <script src="./assignment2.js" defer></script>
+    <link rel="stylesheet" href="./youShop.css">
+    <script src="./youShop.js" defer></script>
     <title> youShop - <?php echo $page_title; ?> </title>  
 </head>
 <body>
