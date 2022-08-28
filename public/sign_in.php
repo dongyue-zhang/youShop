@@ -1,6 +1,5 @@
 <?php session_start(); ?>
 <?php 
-require_once('db_credentials.php');
 require_once('database.php');
 $page_title = 'Sign In';
 

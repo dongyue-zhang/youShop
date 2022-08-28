@@ -1,6 +1,5 @@
 <?php 
 session_start();
-require_once('db_credentials.php');
 require_once('database.php');
 
 if (isset($_GET['id'])) {
@@ -91,7 +90,7 @@ include('header.php');
                 <div class='order_container'>
                     <div class='order_img_container'>
                         <a href="<?php echo "./detail.php?id=". $order_product['product_id']; ?>">
-                            <img src="<?php echo $order_product['img_src']; ?>" class='order_img'>
+                            <img src="<?php echo "../" . $order_product['img_src']; ?>" class='order_img'>
                         </a>
                     </div>
                     <div class='order_info'>

@@ -1,8 +1,7 @@
 <?php 
-    include realpath(__DIR__ . '/vendor/autoload.php');
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+    include realpath(__DIR__ . '/../vendor/autoload.php');
+    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__, 1));
     $dotenv->load();
-    // require_once('db_credentials.php');
 
     function db_connect() {
         $connection = mysqli_connect($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);

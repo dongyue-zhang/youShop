@@ -1,7 +1,6 @@
 <?php session_start(); 
 $page_title = 'Shopping Cart';
 
-require_once('db_credentials.php');
 require_once('database.php');
 // $_SESSION = array();
 if (isset($_GET['product'])) {
