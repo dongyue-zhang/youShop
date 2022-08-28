@@ -1,8 +1,11 @@
 <?php
 
-define("DB_SERVER", getenv('DB_SERVER'));
-define("DB_USER", getenv('DB_USER'));
-define("DB_PASS", getenv('DB_PASS'));
-define("DB_NAME", getenv('DB_NAME'));
+include realpath(__DIR__ . '/vendor/autoload.php');
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/../');
+$dotenv->load();
+define("DB_SERVER", $_ENV['DB_SERVER']);
+define("DB_USER", $_ENV['DB_USER']);
+define("DB_PASS", $_ENV['DB_PASS']);
+define("DB_NAME", $_ENV['DB_NAME']);
 
 ?>
