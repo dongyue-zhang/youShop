@@ -1,12 +1,19 @@
 <?php 
     include realpath(__DIR__ . '/../vendor/autoload.php');
-    echo getenv('APP_ENV');
     $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__, 1));
     if(file_exists(dirname(__DIR__, 1) . '/.env')) {
         $dotenv->load();
-    } 
+    }
+    
+
     function db_connect() {
-        $connection = mysqli_connect($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
+        // $connection = mysqli_connect($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
+        $url = parse_url($_ENV["CLEARDB_DATABASE_URL"]);
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+        $db = substr($url["path"], 1);
+        $connection = mysqli_connect($server, $username, $password, $db);
         confirm_db_connect();
         return $connection;
     }
