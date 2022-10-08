@@ -261,7 +261,7 @@ input, select, button{
 }
 .item_price{
   width: 100%;
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
   text-align: left;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -388,6 +388,7 @@ h2{
   border-radius: 8px;
   align-items: center;
 }
+
 /* .order_subtotal {
   width: 100%;
   padding: 0 0.5rem;
@@ -414,7 +415,8 @@ h2{
   padding: 0 1rem;
   height: 10rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: left;
 }
 .order_name_subtotal, .order_price, .order_quantity, .order_date {
   margin:0;
@@ -466,10 +468,10 @@ h2{
 }
 .add_to_cart_button{
   padding: 0.5rem 2%;
-  margin: 0.5rem 0;
-  max-width: 400px;
-  width: 100%;
-  display: flex;
+  margin: auto;
+  max-width: 200px;
+  /* width: 100%; */
+  /* display: flex; */
   justify-content: center;
 }
 .add_to_cart_button button{
@@ -514,6 +516,7 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 /* .flex-row{
   flex-direction: row;

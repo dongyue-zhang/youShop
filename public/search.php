@@ -1,6 +1,6 @@
 <?php 
 session_start();
-require_once('db_credentials.php');
+
 require_once('database.php');
 $page_title = 'Search Results';
 

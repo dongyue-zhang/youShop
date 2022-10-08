@@ -99,14 +99,14 @@ if ( $_SESSION !== array() && count($_SESSION['cart']) !== 0 ) {?>
                         <div class='order_name'>
                             <?php echo $_SESSION['name'][$i]?>
                         </div>
-                        <!-- <div class='order_subtotal'> -->
+                        <!-- <div class='order_subtotal'>
                         
-                            <!-- Subtotal: <?php echo $_SESSION['subtotal'][$i]?> -->
-                        <!-- </div>
-                    </div> -->
+                            <?php echo $_SESSION['subtotal'][$i]?>
+                        </div> -->
+                    </div>
                     <!-- <div class='order_price'>
                         Price: $<?php echo $_SESSION['price'][$i]?>
-                    </div> -->
+                    </div>  -->
                     <div class='order_quantity'>
                         Qty: <?php echo $_SESSION['qty'][$i]?>
                     </div>
@@ -118,7 +118,7 @@ if ( $_SESSION !== array() && count($_SESSION['cart']) !== 0 ) {?>
                     <div><a href="?delete='<?php echo $_SESSION['cart'][$i]?>'"><button class="delete_button">Delete</button></a></div>
                 </div>
             </div>
-            <?php } ?>
+        <?php } ?>
         </div>
         <div class='add_to_cart_button text-align-right margin-right'>
             <a href="?checkout=true">
