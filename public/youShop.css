@@ -263,7 +263,7 @@ input, select, button{
 }
 .item_price{
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 1rem;
   text-align: left;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -272,7 +272,7 @@ input, select, button{
   align-items: flex-start;
 }
 .item_qty {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .item_price_whole{
   font-size: 2rem;
@@ -621,11 +621,11 @@ legend{
     align-items: flex-start;
 }
 .detail_item_name {
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 }
-.detail_item_bref div {
+.detail_item_brief div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 0 2rem;
+  padding: 0 1rem;
 }

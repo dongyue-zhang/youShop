@@ -27,7 +27,7 @@ mysqli_close($db);
                     <span class='item_price_whole'><?php echo explode(".", $result['price'])[0]; ?></span>
                     <span class='item_price_fraction'><?php echo explode(".", $result['price'])[1]; ?></span>
                 </div>
-                <div class='detail_item_bref'>
+                <div class='detail_item_brief'>
                     <div>
                         <label>Brand: </label>
                         <span><?php echo $result['maker']?></span>
