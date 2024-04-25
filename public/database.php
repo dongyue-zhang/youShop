@@ -10,7 +10,7 @@
         // $connection = mysqli_connect($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
         $server = $_ENV["server"];
         $username = $_ENV["user"];
-        $password = $_ENV["pass"];
+        $password = $_ENV["password"];
         $db = $_ENV["database"];
         $port = $_ENV["port"];
         $connection = mysqli_connect($server, $username, $password, $db, $port);
