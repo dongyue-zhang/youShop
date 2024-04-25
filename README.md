@@ -4,7 +4,7 @@
 
 ## Viewing
 
-https://onlineshopping-youshop.herokuapp.com/
+[http://159.89.121.107/apps/youshop/index.php](http://159.89.121.107/apps/youshop/index.php)
 
 ## App Info
 
