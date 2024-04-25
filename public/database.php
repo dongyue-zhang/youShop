@@ -8,11 +8,11 @@
 
     function db_connect() {
         // $connection = mysqli_connect($_ENV['DB_SERVER'], $_ENV['DB_USER'], $_ENV['DB_PASS'], $_ENV['DB_NAME']);
-        $server = $_EVN["server"];
-        $username = $_EVN["user"];
-        $password = $_EVN["pass"];
-        $db = $_EVN["database"];
-        $port = $_EVN["port"];
+        $server = $_ENV["server"];
+        $username = $_ENV["user"];
+        $password = $_ENV["pass"];
+        $db = $_ENV["database"];
+        $port = $_ENV["port"];
         $connection = mysqli_connect($server, $username, $password, $db, $port);
         confirm_db_connect();
         return $connection;
